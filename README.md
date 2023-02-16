@@ -19,24 +19,7 @@ and then
 yarn start
 ````
 
-EER schema in the backend app:
-
+EER schema is in the:
 ````
-+-----------------+							                              +-----------------+
-|     User        |							                              |     Token       |
-+-----------------+	   <- One token belongs to one user (1:1)	+-----------------+
-| -id             | ------------------------------------\		  | -id             |              
-| -email          | One user can have many tokens (1:N)  \		| -token          |
-| -password       |		      ->			                      \___| -userId (FK)    |
-| -fullname       |							                              +-----------------+
-+-----------------+
-
-
-+-----------------+							                                    +-----------------+
-|     Author      |							                                    |     Quote       |
-+-----------------+	   <- One quote belongs to one author (1:1)	    +-----------------+
-| -id             | -------------------------------------\         	| -id             |
-| -name           | One author can have many quotes (1:N) \		      | -text           |
-+-----------------+			->       	                         \________| -authorId (FK)  |
-                                                                    +-----------------+
+/server/EERschema.txt
 ````
