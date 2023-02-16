@@ -21,6 +21,7 @@ yarn start
 
 EER schema in the backend app:
 
+````
 +-----------------+							                    +-----------------+
 |     User        |							                    |     Token       |
 +-----------------+	   <- One token belongs to one user (1:1)	+-----------------+
@@ -38,3 +39,4 @@ EER schema in the backend app:
 | -name           | One author can have many quotes (1:N) \		    | -text           |
 +-----------------+			->       	                   \________| -authorId (FK)  |
 +-----------------+
+````
