@@ -22,21 +22,21 @@ yarn start
 EER schema in the backend app:
 
 ````
-+-----------------+							                    +-----------------+
-|     User        |							                    |     Token       |
++-----------------+							                              +-----------------+
+|     User        |							                              |     Token       |
 +-----------------+	   <- One token belongs to one user (1:1)	+-----------------+
-| -id             | ------------------------------------\		| -id             |              
+| -id             | ------------------------------------\		  | -id             |              
 | -email          | One user can have many tokens (1:N)  \		| -token          |
-| -password       |		      ->			              \_____| -userId (FK)    |
-| -fullname       |							                    +-----------------+
+| -password       |		      ->			                      \___| -userId (FK)    |
+| -fullname       |							                              +-----------------+
 +-----------------+
 
 
-+-----------------+							                        +-----------------+
-|     Author      |							                        |     Quote       |
++-----------------+							                                    +-----------------+
+|     Author      |							                                    |     Quote       |
 +-----------------+	   <- One quote belongs to one author (1:1)	    +-----------------+
 | -id             | -------------------------------------\         	| -id             |
-| -name           | One author can have many quotes (1:N) \		    | -text           |
-+-----------------+			->       	                   \________| -authorId (FK)  |
-+-----------------+
+| -name           | One author can have many quotes (1:N) \		      | -text           |
++-----------------+			->       	                         \________| -authorId (FK)  |
+                                                                    +-----------------+
 ````
