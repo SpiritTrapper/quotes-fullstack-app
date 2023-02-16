@@ -1,0 +1,17 @@
+{
+  "name": "quotes-fullstack-app",
+  "version": "0.1.0",
+  "description": "Short demo for Evil Martians",
+  "author": "Ivan Andreev",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dependencies": "yarn install && cd client && yarn install && cd ../ && cd server && yarn install",
+    "server:build": "cd server && yarn build",
+    "start": "concurrently 'cd server && yarn start' 'cd client && yarn start'",
+    "client:build": "cd client && yarn build"
+  },
+  "dependencies": {
+    "concurrently": "^7.5.0"
+  }
+}

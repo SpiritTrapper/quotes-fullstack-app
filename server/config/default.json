@@ -1,0 +1,8 @@
+{
+  "port": 5000,
+  "secret": "a long time ago in a galaxy far away",
+  "db-host": "localhost",
+  "db-name": "quotes",
+  "db-user-name": "admin",
+  "db-password": "password"
+}
