@@ -1,7 +1,7 @@
 {
   "name": "quotes-fullstack-app",
   "version": "0.1.0",
-  "description": "Short demo for Evil Martians",
+  "description": "Small full-stack app which gets random authors and quotes from the server and allows to add new quotes. With authorization.",
   "author": "Ivan Andreev",
   "license": "MIT",
   "private": true,
